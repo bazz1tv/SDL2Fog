@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E943030A16F6B38F00A95C27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E943030916F6B38F00A95C27 /* Cocoa.framework */; };
+		E943030C16F6BB3D00A95C27 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E943030B16F6BB3D00A95C27 /* SDL2.framework */; };
+		E94E897216F8731C00F67D16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94E896D16F8731C00F67D16 /* main.cpp */; };
+		E94E897316F8731C00F67D16 /* savepng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E94E896E16F8731C00F67D16 /* savepng.cpp */; };
+		E94E897716F8735A00F67D16 /* libFog.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E94E897616F8735A00F67D16 /* libFog.dylib */; };
+		E94E897816F8736000F67D16 /* libFog.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E94E897616F8735A00F67D16 /* libFog.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E94302F016F6ADB900A95C27 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				E94E897816F8736000F67D16 /* libFog.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E94302F216F6ADB900A95C27 /* SDL2Fog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDL2Fog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E943030916F6B38F00A95C27 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../../../../System/Library/Frameworks/Cocoa.framework; sourceTree = "<group>"; };
+		E943030B16F6BB3D00A95C27 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		E94E896D16F8731C00F67D16 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E94E896E16F8731C00F67D16 /* savepng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = savepng.cpp; path = Src/savepng.cpp; sourceTree = SOURCE_ROOT; };
+		E94E896F16F8731C00F67D16 /* savepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = savepng.h; path = Src/savepng.h; sourceTree = SOURCE_ROOT; };
+		E94E897616F8735A00F67D16 /* libFog.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libFog.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E94302EF16F6ADB900A95C27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E943030A16F6B38F00A95C27 /* Cocoa.framework in Frameworks */,
+				E943030C16F6BB3D00A95C27 /* SDL2.framework in Frameworks */,
+				E94E897716F8735A00F67D16 /* libFog.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E94302E716F6ADB900A95C27 = {
+			isa = PBXGroup;
+			children = (
+				E94E897516F8734200F67D16 /* Lib */,
+				E94302FF16F6ADED00A95C27 /* Frameworks */,
+				E94302F516F6ADB900A95C27 /* src */,
+				E94302F316F6ADB900A95C27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E94302F316F6ADB900A95C27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E94302F216F6ADB900A95C27 /* SDL2Fog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E94302F516F6ADB900A95C27 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E94E896D16F8731C00F67D16 /* main.cpp */,
+				E94E896E16F8731C00F67D16 /* savepng.cpp */,
+				E94E896F16F8731C00F67D16 /* savepng.h */,
+			);
+			name = src;
+			path = "SVG Rasterizer";
+			sourceTree = "<group>";
+		};
+		E94302FF16F6ADED00A95C27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E943030B16F6BB3D00A95C27 /* SDL2.framework */,
+				E943030916F6B38F00A95C27 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E94E897516F8734200F67D16 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				E94E897616F8735A00F67D16 /* libFog.dylib */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E94302F116F6ADB900A95C27 /* SDL2Fog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E94302FC16F6ADB900A95C27 /* Build configuration list for PBXNativeTarget "SDL2Fog" */;
+			buildPhases = (
+				E94302EE16F6ADB900A95C27 /* Sources */,
+				E94302EF16F6ADB900A95C27 /* Frameworks */,
+				E94302F016F6ADB900A95C27 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDL2Fog;
+			productName = "SVG Rasterizer";
+			productReference = E94302F216F6ADB900A95C27 /* SDL2Fog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E94302E916F6ADB900A95C27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = bazz;
+			};
+			buildConfigurationList = E94302EC16F6ADB900A95C27 /* Build configuration list for PBXProject "SDL2Fog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E94302E716F6ADB900A95C27;
+			productRefGroup = E94302F316F6ADB900A95C27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E94302F116F6ADB900A95C27 /* SDL2Fog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E94302EE16F6ADB900A95C27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E94E897216F8731C00F67D16 /* main.cpp in Sources */,
+				E94E897316F8731C00F67D16 /* savepng.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E94302FA16F6ADB900A95C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E94302FB16F6ADB900A95C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E94302FD16F6ADB900A95C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				HEADER_SEARCH_PATHS = (
+					/usr/include,
+					"~/Projects/fog-read-only/Fog/Src",
+					/usr/local/include,
+					/opt/local/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/.";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../fog-read-only/Fog/Build/Debug\"",
+					/opt/local/lib,
+					"\"$(SRCROOT)/Lib\"",
+				);
+				OTHER_LDFLAGS = "-lpng";
+				PRODUCT_NAME = SDL2Fog;
+			};
+			name = Debug;
+		};
+		E94302FE16F6ADB900A95C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				HEADER_SEARCH_PATHS = (
+					/usr/include,
+					"~/Projects/fog-read-only/Fog/Src",
+					/usr/local/include,
+					/opt/local/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/.";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../fog-read-only/Fog/Build/Debug\"",
+					/opt/local/lib,
+					"\"$(SRCROOT)/Lib\"",
+				);
+				OTHER_LDFLAGS = "-lpng";
+				PRODUCT_NAME = SDL2Fog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E94302EC16F6ADB900A95C27 /* Build configuration list for PBXProject "SDL2Fog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E94302FA16F6ADB900A95C27 /* Debug */,
+				E94302FB16F6ADB900A95C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E94302FC16F6ADB900A95C27 /* Build configuration list for PBXNativeTarget "SDL2Fog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E94302FD16F6ADB900A95C27 /* Debug */,
+				E94302FE16F6ADB900A95C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E94302E916F6ADB900A95C27 /* Project object */;
+}
