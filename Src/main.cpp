@@ -8,9 +8,8 @@
 #include <Fog/G2d.h>
 
 #include <SDL2/SDL.h>
-#include "savepng.h"
 
-using namespace std;
+using namespace Fog;
 // ============================================================================
 // [Tools]
 // ============================================================================
@@ -89,7 +88,7 @@ struct SdlApplication
 SdlApplication::SdlApplication() :
 _screen(NULL),
 _timer(0),
-_interval(5),
+_interval(25),
 _rotate(0.0),
 _running(false)
 {
@@ -156,9 +155,6 @@ int SdlApplication::run(int width, int height)
 		onEvent(&ev);
 		if (_running == false)
 		{
-			SDL_Surface *ss = SDL_PNGFormatAlpha(_screen);
-			SDL_SavePNG(ss,"bla.png");
-			SDL_FreeSurface(ss);
 			break;
 		}
 	}
@@ -257,13 +253,7 @@ void SdlApplication::onPaint(Fog::Painter& p)
 	// And draw something...
 	Fog::LinearGradientF gradient;
 	
-	/*gradient.setPoints(
-					   Fog::DoublePoint(cp.x - roundw / 2.0f, cp.y - roundh / 2.0f),
-					   Fog::DoublePoint(cp.x + roundw / 2.0f, cp.y + roundh / 2.0f));
-	gradient.addStop(Fog::ArgbStop(0.0f, Fog::Argb32(0xFFFFFFFF)));
-	gradient.addStop(Fog::ArgbStop(0.5f, Fog::Argb32(0xFFFFFF00)));
-	gradient.addStop(Fog::ArgbStop(1.0f, Fog::Argb32(0xFFFF0000)));*/
-	//gradient.s
+	//gradient
 	gradient.setStart(cp.x - roundw / 2.0f, cp.y - roundh / 2.0f);
 	gradient.setEnd(cp.x + roundw / 2.0f, cp.y + roundh / 2.0f);
 	gradient.addStop(0.0f, Fog::Argb32(0xFFFFFFFF));
@@ -303,8 +293,8 @@ int main(int argc, char* argv[])
 	}
 	CFRelease(resourcesURL);
 	
-	string longpath(pathtofile);
-	string desiredpath;
+	std::string longpath(pathtofile);
+	std::string desiredpath;
 	size_t pos;
 	
 	pos = longpath.rfind(".app/");
